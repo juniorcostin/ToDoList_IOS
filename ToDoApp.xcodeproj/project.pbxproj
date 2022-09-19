@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D3DB134628D528EF0012FE06 /* CreateTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB134528D528EF0012FE06 /* CreateTaskTableViewCell.swift */; };
-		D3DB134828D52B7C0012FE06 /* TaskDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB134728D52B7C0012FE06 /* TaskDescriptionTableViewCell.swift */; };
-		D3DB134A28D52BA50012FE06 /* dateTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DB134928D52BA50012FE06 /* dateTimeTableViewCell.swift */; };
+		D3174D3C28D90C22007CF0D9 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3174D3B28D90C22007CF0D9 /* CategoriesTableViewController.swift */; };
+		D3174D3F28D90D0A007CF0D9 /* CategoryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3174D3E28D90D0A007CF0D9 /* CategoryRepository.swift */; };
+		D3174D4128D91DF5007CF0D9 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3174D4028D91DF5007CF0D9 /* TaskRepository.swift */; };
+		D3C06DA928D8DFE100BBE01F /* CreateTaskTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C06DA828D8DFE100BBE01F /* CreateTaskTableViewController.swift */; };
+		D3C06DAB28D8E20200BBE01F /* TaskDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C06DAA28D8E20200BBE01F /* TaskDescriptionTableViewCell.swift */; };
+		D3C06DAF28D8E69C00BBE01F /* DateTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C06DAE28D8E69C00BBE01F /* DateTimeTableViewCell.swift */; };
 		D3E5951528D4DF6300C624F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5951428D4DF6300C624F9 /* AppDelegate.swift */; };
 		D3E5951728D4DF6300C624F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E5951628D4DF6300C624F9 /* SceneDelegate.swift */; };
 		D3E5951C28D4DF6300C624F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3E5951A28D4DF6300C624F9 /* Main.storyboard */; };
@@ -42,9 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D3DB134528D528EF0012FE06 /* CreateTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskTableViewCell.swift; sourceTree = "<group>"; };
-		D3DB134728D52B7C0012FE06 /* TaskDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDescriptionTableViewCell.swift; sourceTree = "<group>"; };
-		D3DB134928D52BA50012FE06 /* dateTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateTimeTableViewCell.swift; sourceTree = "<group>"; };
+		D3174D3B28D90C22007CF0D9 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		D3174D3E28D90D0A007CF0D9 /* CategoryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRepository.swift; sourceTree = "<group>"; };
+		D3174D4028D91DF5007CF0D9 /* TaskRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
+		D3C06DA828D8DFE100BBE01F /* CreateTaskTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskTableViewController.swift; sourceTree = "<group>"; };
+		D3C06DAA28D8E20200BBE01F /* TaskDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		D3C06DAE28D8E69C00BBE01F /* DateTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeTableViewCell.swift; sourceTree = "<group>"; };
 		D3E5951128D4DF6300C624F9 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E5951428D4DF6300C624F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3E5951628D4DF6300C624F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3174D3D28D90CE4007CF0D9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D3174D3E28D90D0A007CF0D9 /* CategoryRepository.swift */,
+				D3174D4028D91DF5007CF0D9 /* TaskRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		D3E5950828D4DF6200C624F9 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +126,7 @@
 		D3E5951328D4DF6300C624F9 /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				D3174D3D28D90CE4007CF0D9 /* Repositories */,
 				D3E5954928D4F20800C624F9 /* models */,
 				D3E5954428D4E7F200C624F9 /* Controllers */,
 				D3E5951428D4DF6300C624F9 /* AppDelegate.swift */,
@@ -145,7 +161,8 @@
 			children = (
 				D3E5954E28D4F70300C624F9 /* Cells */,
 				D3E5954728D4E9B300C624F9 /* TasksTableViewController.swift */,
-				D3DB134528D528EF0012FE06 /* CreateTaskTableViewCell.swift */,
+				D3C06DA828D8DFE100BBE01F /* CreateTaskTableViewController.swift */,
+				D3174D3B28D90C22007CF0D9 /* CategoriesTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,8 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				D3E5954F28D4F72A00C624F9 /* TasksTableViewCell.swift */,
-				D3DB134728D52B7C0012FE06 /* TaskDescriptionTableViewCell.swift */,
-				D3DB134928D52BA50012FE06 /* dateTimeTableViewCell.swift */,
+				D3C06DAA28D8E20200BBE01F /* TaskDescriptionTableViewCell.swift */,
+				D3C06DAE28D8E69C00BBE01F /* DateTimeTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -300,15 +317,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3DB134A28D52BA50012FE06 /* dateTimeTableViewCell.swift in Sources */,
 				D3E5955028D4F72A00C624F9 /* TasksTableViewCell.swift in Sources */,
 				D3E5954B28D4F26D00C624F9 /* Task.swift in Sources */,
+				D3174D3F28D90D0A007CF0D9 /* CategoryRepository.swift in Sources */,
 				D3E5954D28D4F32200C624F9 /* Category.swift in Sources */,
-				D3DB134828D52B7C0012FE06 /* TaskDescriptionTableViewCell.swift in Sources */,
+				D3C06DAB28D8E20200BBE01F /* TaskDescriptionTableViewCell.swift in Sources */,
+				D3C06DAF28D8E69C00BBE01F /* DateTimeTableViewCell.swift in Sources */,
+				D3174D4128D91DF5007CF0D9 /* TaskRepository.swift in Sources */,
 				D3E5954828D4E9B300C624F9 /* TasksTableViewController.swift in Sources */,
 				D3E5951528D4DF6300C624F9 /* AppDelegate.swift in Sources */,
 				D3E5951728D4DF6300C624F9 /* SceneDelegate.swift in Sources */,
-				D3DB134628D528EF0012FE06 /* CreateTaskTableViewCell.swift in Sources */,
+				D3C06DA928D8DFE100BBE01F /* CreateTaskTableViewController.swift in Sources */,
+				D3174D3C28D90C22007CF0D9 /* CategoriesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

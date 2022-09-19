@@ -1,15 +1,13 @@
 //
-//  dateTimeTableViewCell.swift
+//  DateTimeTableViewCell.swift
 //  ToDoApp
 //
-//  Created by Costin on 16/09/22.
+//  Created by Costin on 19/09/22.
 //
 
 import UIKit
 
-class dateTimeTableViewCell: UITableViewCell {
-
-    
-    @IBOutlet weak var dateTask: UITextField!
+class DateTimeTableViewCell: UITableViewCell {
+    @IBOutlet weak var dateTimeTextField: UITextField!
     
 }

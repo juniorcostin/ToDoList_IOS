@@ -11,6 +11,6 @@ struct Task{
     var id = UUID()
     var nome: String = ""
     var data: Date = Date()
-    var categoria: Category = Category(nome: "Compras", cor: .black)
+    var categoria: Category = Category(nome: " ", cor: .black)
     
 }

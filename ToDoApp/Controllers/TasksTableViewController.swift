@@ -7,23 +7,19 @@
 
 import UIKit
 
-let verde = Category(nome: "compras", cor: UIColor.green)
-let azul = Category(nome: "estudar", cor: UIColor.blue)
-let tasks: [Task] = [
-    Task(nome: "Esta é minha Task", data: Date(), categoria: verde),
-    Task(nome: "Esta é minha segunda Task", data: Date(), categoria: azul),
-    Task(nome: "Esta é minha terceira Task", data: Date(), categoria: verde),
-    Task(nome: "Esta é minha quarta Task", data: Date(), categoria: azul),
-    Task(nome: "Esta é minha quinta Task dausdhaisuhdaiuhduaishdiuahduiahduiahdiuahsiudhaiushdaiuhdsiuahdaiuhdiuashdiuahduiashdiuahdiuahdiuash", data: Date(), categoria: verde)
-]
-
 class TasksTableViewController: UITableViewController {
     
     private var dateFormatter: DateFormatter = DateFormatter()
+    private var tasks: [Task] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        self.tasks = TaskRepository.instance.getTasks()
+        self.tableView.reloadData()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
